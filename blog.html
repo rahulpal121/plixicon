@@ -2,51 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog | Kusum General Store</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">  <!-- Or your theme's CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css"> <!-- Use your existing stylesheet -->
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Kusum Store</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item active"><a class="nav-link" href="blog.html">Blog</a></li>
-      </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Kusum Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item active"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <div class="container mt-5">
-    <h1 class="mb-4">Our Blog</h1>
+  <!-- Hero Section -->
+  <section class="py-5 text-center text-white" style="background-color: #1a1a1a;">
+    <div class="container">
+      <h1 class="display-4">Our Blog</h1>
+      <p class="lead">Latest News, Updates & Tips from Kusum General Store</p>
+    </div>
+  </section>
 
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <h3>First Blog Post</h3>
-        <p>Short description of your first update, offer, or beauty tip.</p>
-        <a href="#">Read More</a>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h3>Second Blog Post</h3>
-        <p>New arrivals, product launches, or festival deals—add anything you like.</p>
-        <a href="#">Read More</a>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h3>Third Blog Post</h3>
-        <p>Another short teaser for a future post or store announcement.</p>
-        <a href="#">Read More</a>
+  <!-- Blog Posts -->
+  <section class="py-5" style="background-color: #121212; color: #fff;">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 bg-dark text-white">
+            <img src="images/blog1.jpg" class="card-img-top" alt="Post Image">
+            <div class="card-body">
+              <h5 class="card-title">Top Gift Ideas for Every Occasion</h5>
+              <p class="card-text">Discover perfect gifts that bring smiles to every celebration.</p>
+              <a href="#" class="btn btn-warning">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 bg-dark text-white">
+            <img src="images/blog2.jpg" class="card-img-top" alt="Post Image">
+            <div class="card-body">
+              <h5 class="card-title">Beauty Tips for Glowing Skin</h5>
+              <p class="card-text">Get expert beauty tips and learn how to maintain radiant skin every day.</p>
+              <a href="#" class="btn btn-warning">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 bg-dark text-white">
+            <img src="images/blog3.jpg" class="card-img-top" alt="Post Image">
+            <div class="card-body">
+              <h5 class="card-title">Festive Offers You Can't Miss</h5>
+              <p class="card-text">Check out the latest festive season discounts and offers on gifts and cosmetics.</p>
+              <a href="#" class="btn btn-warning">Read More</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
+  </section>
 
-  <footer class="text-center mt-5 p-3">
-    <p>&copy; 2025 Kusum General Store</p>
+  <!-- Footer -->
+  <footer class="py-4 text-center text-white" style="background-color: #1a1a1a;">
+    <div class="container">
+      <p>&copy; 2025 Kusum General Store. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
